@@ -1,0 +1,179 @@
+
+<html>
+<head>
+<title>Glass Login</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:url("ghj.jpg") center/cover no-repeat;
+}
+
+/* Card */
+.login-card{
+    width:380px;
+    padding:35px 30px;
+    border-radius:30px;
+    background:rgba(gray);
+    backdrop-filter: blur(15px);
+    border:2px solid rgba(whitesmoke);
+    box-shadow:0 30px 60px rgba(black);
+    text-align:center;
+}
+
+/* Logo */
+.logo{
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    background:whitesmoke;
+    margin:0 auto 15px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-weight:bold;
+}
+
+/* Title */
+.login-card h2{
+    font-size:22px;
+    margin-bottom:5px;
+}
+.login-card p{
+    font-size:14px;
+    color:white;
+    margin-bottom:20px;
+}
+
+/* Social Buttons */
+.social{
+    display:flex;
+    gap:10px;
+    justify-content:center;
+    margin-bottom:15px;
+}
+.social button{
+    flex:1;
+    padding:10px;
+    border-radius:25px;
+    border:1px ghostwhite;
+    background:gray;
+    cursor:pointer;
+    font-size:14px;
+}
+
+/* Divider */
+.or{
+    font-size:13px;
+    color:white;
+    margin:15px 0;
+}
+
+/* Input */
+.field{
+    text-align:left;
+    margin-bottom:15px;
+}
+.field label{
+    font-size:14px;
+    font-weight:600;
+}
+.field input{
+    width:100%;
+    padding:12px 15px;
+    margin-top:5px;
+    border-radius:25px;
+    border:1px solid olive;
+    outline:none;
+    background:rgba(grey);
+}
+
+/* Options */
+.options{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    font-size:13px;
+    margin:15px 0;
+}
+.options a{
+    text-decoration:none;
+    color:burlywood;
+}
+
+/* Button */
+.signin{
+    width:100%;
+    padding:14px;
+    border:none;
+    border-radius:30px;
+    background:black;
+    color:whitesmoke;
+    font-size:16px;
+    cursor:pointer;
+}
+
+/* Footer */
+.footer{
+    margin-top:15px;
+    font-size:14px;
+}
+.footer a{
+    font-weight:600;
+    text-decoration:none;
+    color:black;
+}
+</style>
+</head>
+
+<body>
+
+<div class="login-card">
+    <div class="logo">★</div>
+
+    <h2>Welcome back</h2>
+    <p>ANKIT KICKS</p>
+
+    <div class="social">
+        <button></button>
+        <button>Google</button>
+        <button>in</button>
+    </div>
+
+    <div class="or">OR</div>
+
+    <div class="field">
+        <label>+91 Phone Number</label>
+        <input type="phone number" placeholder="Enter your phone number">
+    </div>
+
+    <div class="field">
+        <label>OTP</label>
+        <input type="OTP" placeholder="Enter your OTP">
+    </div>
+
+    <div class="options">
+        <label><input type="checkbox"> Remember me</label>
+        <a href="#">Forgot password?</a>
+    </div>
+
+    <button class="signin">Sign in</button>
+
+    <div class="footer">
+        Don’t have an account yet? <a href="#">Sign up</a>
+    </div>
+</div>
+
+</body>
+</html>
